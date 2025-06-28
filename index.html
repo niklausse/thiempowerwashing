@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Thiem Power Washing LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bold, crisp fonts for modern look -->
+  <!-- Futuristic, bold, and crisp fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Fredoka:wght@700&display=swap" rel="stylesheet">
   <style>
     html, body {
@@ -15,64 +15,79 @@
     }
     body {
       min-height: 100vh;
+      min-width: 100vw;
+      font-family: 'Fredoka', Arial, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      font-family: 'Fredoka', Arial, sans-serif;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
+    /* LOGO */
     .logo-banner {
-      margin-top: 32px;
+      margin-top: 38px;
       margin-bottom: 12px;
       width: 95vw;
-      max-width: 640px;
+      max-width: 680px;
       display: flex;
       justify-content: center;
     }
     .logo-banner img {
       width: 100%;
-      max-width: 640px;
+      max-width: 680px;
       height: auto;
       display: block;
-      filter: drop-shadow(0 6px 32px #2228);
+      filter: drop-shadow(0 6px 32px #0d1756cc);
     }
+
+    /* MAIN FLEX SECTION */
     .main-row {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
-      gap: 38px;
-      margin-bottom: 30px;
+      gap: 48px;
+      margin-bottom: 40px;
       width: 100vw;
-      max-width: 1000px;
+      max-width: 1100px;
     }
+
+    /* DOG MASCOT */
     .mascot-img-container {
-      width: 230px;
-      height: 230px;
-      background: #fff;
-      border-radius: 30px;
+      width: 190px;
+      height: 190px;
+      background: 
+        radial-gradient(circle at 60% 40%, #fff 60%, #ffe174 100%);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 2px 32px #1337a377, 0 0 0 5px #ffda57bb;
+      box-shadow: 0 8px 44px #1337a333, 0 0 0 7px #ffda5799;
       overflow: hidden;
-      margin-left: 12px;
+      margin-left: 4px;
+      position: relative;
+      border: 5px solid #1837b2;
     }
     .mascot-img-container img {
-      width: 98%;
-      height: auto;
-      display: block;
-      border-radius: 20px;
-      background: #fff;
+      width: 80%;
+      height: 80%;
       object-fit: contain;
+      display: block;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 auto;
+      box-shadow: 0 3px 12px #1837b266;
     }
+
+    /* INFO BOX */
     .info-box {
       background: #fff;
-      border-radius: 18px;
-      padding: 28px 32px 24px 32px;
-      box-shadow: 0 2px 38px #1337a355, 0 0 0 4px #ffda5777;
+      border-radius: 20px;
+      padding: 32px 44px 24px 44px;
+      box-shadow: 0 4px 38px #1837b233, 0 0 0 4px #ffda5777;
       min-width: 260px;
-      max-width: 370px;
+      max-width: 390px;
       border: 2.5px solid #ffda57;
       text-align: center;
       position: relative;
@@ -80,13 +95,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      /* subtle glass effect */
+      backdrop-filter: blur(1.5px) saturate(1.12);
     }
     .info-box h2, .info-box p {
       margin: 0 0 14px 0;
       font-family: 'Orbitron', Arial, sans-serif;
-      color: #1837b2;
+      color: #1b33a1;
       letter-spacing: 0.04em;
-      font-size: 1.07rem;
+      font-size: 1.12rem;
       font-weight: 700;
     }
     .info-box .phone-row {
@@ -96,13 +113,13 @@
       margin-bottom: 18px;
     }
     .info-box .phone-icon {
-      font-size: 1.24em;
+      font-size: 1.18em;
       margin-right: 7px;
       color: #1837b2;
-      filter: drop-shadow(0 2px 3px #1337a388);
+      filter: drop-shadow(0 2px 2px #1337a388);
     }
     .info-box .phone-number {
-      background: linear-gradient(90deg, #264fdc 60%, #ffda57 100%);
+      background: linear-gradient(90deg, #234bcb 60%, #ffda57 100%);
       color: #fff;
       font-family: 'Orbitron', Arial, sans-serif;
       font-size: 1.15em;
@@ -112,38 +129,37 @@
       border: none;
       box-shadow: 0 0 8px #1337a344, 0 0 0 2px #ffda57aa;
       letter-spacing: 0.07em;
-      margin-left: 0;
       text-shadow: 0 2px 4px #1337a3aa, 0 0 2px #fff;
       border: 2px solid #ffda57;
       transition: background 0.16s, color 0.18s;
       display: inline-block;
     }
     .info-box .divider {
-      width: 90%;
+      width: 95%;
       height: 3px;
       background: linear-gradient(90deg, #ffda57 60%, #fff 100%);
       border: none;
-      margin: 16px 0 20px 0;
+      margin: 18px 0 20px 0;
       border-radius: 2px;
       box-shadow: 0 1px 0 #ffda5722;
     }
     .info-box .button-row {
       display: flex;
-      gap: 24px;
+      gap: 28px;
       justify-content: center;
       margin-top: 6px;
       margin-bottom: 10px;
     }
     .info-box .button {
       display: inline-block;
-      min-width: 120px;
-      padding: 0.82em 1.5em;
+      min-width: 130px;
+      padding: 0.93em 1.7em;
       font-size: 1.13em;
       font-family: 'Orbitron', Arial, sans-serif;
       font-weight: 700;
       border: none;
       border-radius: 26px;
-      background: linear-gradient(90deg, #264fdc 60%, #ffda57 100%);
+      background: linear-gradient(90deg, #234bcb 60%, #ffda57 100%);
       color: #fff;
       box-shadow: 0 2px 14px #1337a357, 0 0 9px #ffda5790;
       text-decoration: none;
@@ -162,13 +178,12 @@
     }
     .info-box .copyright {
       margin-top: 20px;
-      font-size: 0.95em;
-      color: #1837b2;
+      font-size: 0.97em;
+      color: #1b33a1;
       font-family: 'Fredoka', Arial, sans-serif;
       opacity: 0.88;
       text-align: center;
     }
-    /* Subtle touch: add the orange/blue swoosh top border from idea.jpg */
     .info-box:before {
       content: "";
       display: block;
@@ -180,18 +195,18 @@
       z-index: 3;
     }
     /* Responsive */
-    @media (max-width: 960px) {
-      .main-row { flex-direction: column; gap: 10px; align-items: center; }
-      .mascot-img-container { width: 180px; height: 180px; }
-      .info-box { max-width: 95vw; }
+    @media (max-width: 1050px) {
+      .main-row { flex-direction: column; gap: 18px; align-items: center; }
+      .mascot-img-container { width: 150px; height: 150px; }
+      .info-box { max-width: 97vw; }
     }
-    @media (max-width: 480px) {
-      .logo-banner { margin-top: 12px; }
-      .main-row { gap: 6px; }
-      .info-box { padding: 15px 4px; }
+    @media (max-width: 600px) {
+      .logo-banner { margin-top: 16px; }
+      .main-row { gap: 8px; }
+      .info-box { padding: 14px 4px; }
       .info-box .button-row { flex-direction: column; gap: 12px; }
-      .mascot-img-container { width: 95vw; max-width: 120px; height: 90px; }
-      .info-box h2, .info-box p { font-size: .92rem; }
+      .mascot-img-container { width: 100px; height: 100px; }
+      .info-box h2, .info-box p { font-size: .96rem; }
       .info-box .button { font-size: .98em; padding: 0.7em 1.1em; }
     }
   </style>
@@ -203,9 +218,9 @@
   </div>
   <!-- Mascot & Info Row -->
   <div class="main-row">
-    <!-- Mascot Image -->
+    <!-- Dog Mascot Image -->
     <div class="mascot-img-container">
-      <img src="image2.jpg" alt="Mascot" />
+      <img src="image2.jpg" alt="Dog Mascot" />
     </div>
     <!-- Info Box -->
     <div class="info-box">
