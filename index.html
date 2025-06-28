@@ -4,146 +4,26 @@
   <meta charset="UTF-8">
   <title>Thiem Power Washing LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Fun, bubbly font with crisp modern backup -->
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Bebas+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Bubbly, modern, and crisp fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       min-height: 100vh;
       background:
-        linear-gradient(120deg, rgba(10, 23, 75, 0.94) 40%, rgba(37, 57, 141,0.92) 100%),
-        url('header1.jpg') no-repeat center center fixed;
+        linear-gradient(120deg, rgba(10, 23, 75, 0.95) 40%, rgba(37, 57, 141,0.93) 100%),
+        url('header1.jpg') no-repeat center top fixed;
       background-size: cover;
       color: #fff;
-      font-family: 'Fredoka', 'Poppins', Arial, sans-serif;
-      /* lively movement */
-      animation: bg-move 24s ease-in-out infinite alternate;
-    }
-
-    @keyframes bg-move {
-      0% { background-position: center 0, center 0; }
-      100% { background-position: center 60px, center 40px; }
-    }
-
-    .container {
-      max-width: 540px;
-      margin: 7vh auto 0 auto;
-      background: rgba(255,255,255,0.96);
-      border-radius: 30px;
-      box-shadow: 0 8px 48px 0 rgba(10,23,75,0.27), 0 0 0 6px #e6b80022;
-      padding: 2.6rem 2.2rem 2.1rem 2.2rem;
-      text-align: center;
-      border: 3px solid #ffda57;
+      font-family: 'Fredoka', 'Bebas Neue', Arial, sans-serif;
       position: relative;
-      z-index: 2;
-      /* crisp pop effect */
-      animation: popin 0.8s cubic-bezier(.53,1.75,.29,.98);
-    }
-
-    @keyframes popin {
-      0% { transform: scale(0.92) translateY(35px); opacity: 0; }
-      80% { transform: scale(1.05) translateY(-8px); }
-      100% { transform: scale(1) translateY(0); opacity: 1; }
-    }
-
-    header h1 {
-      font-family: 'Fredoka', 'Bebas Neue', cursive, sans-serif;
-      font-size: 3.1rem;
-      margin-bottom: 0.25rem;
-      color: #1337a3;
-      letter-spacing: 0.025em;
-      text-shadow:
-        0 4px 32px #e6b80055, 
-        0 1px 0 #fff,
-        0 0 2px #ffda57bb;
-      background: linear-gradient(90deg,#1b349b 60%, #ffda57 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      filter: drop-shadow(0 0 12px #fff8);
-      font-weight: 700;
-    }
-
-    header p {
-      margin: 0.3rem 0 0.5rem 0;
-      color: #2d49a6;
-      font-size: 1.21rem;
-      font-weight: 600;
-      letter-spacing: 0.012em;
-      text-shadow: 0 2px 0 #fff8, 0 0 2px #ffda5733;
-      font-family: 'Fredoka', 'Poppins', Arial, sans-serif;
-    }
-
-    .phone {
-      color: #e6b800;
-      background: #1337a3;
-      display: inline-block;
-      padding: 0.25em 1em 0.25em 1em;
-      border-radius: 1em;
-      font-weight: 700;
-      font-size: 1.19rem;
-      letter-spacing: 0.03em;
-      margin-bottom: 1.1rem;
-      margin-top: 0.9rem;
-      box-shadow: 0 3px 12px #ffda5788, 0 0 2px #fff9;
-      border: 2.5px solid #ffda57;
-      text-shadow: 0 2px 6px #fff9, 0 0 2px #1337a3aa;
-      font-family: 'Poppins', Arial, sans-serif;
-    }
-
-    nav {
-      margin: 2.4rem 0 1.2rem 0;
-    }
-    .button {
-      display: inline-block;
-      margin: 0.5rem 0.6rem;
-      padding: 0.9rem 2.3rem;
-      font-size: 1.24rem;
-      font-weight: 700;
-      border: none;
-      border-radius: 50px;
-      background: linear-gradient(90deg, #1b349b 65%, #ffda57 100%);
-      color: #fff;
-      box-shadow: 0 2px 14px #1337a357, 0 0 9px #ffda57a5;
-      text-decoration: none;
-      transition: background 0.16s, color 0.18s, transform 0.14s;
-      letter-spacing: 0.04em;
-      cursor: pointer;
-      font-family: 'Fredoka', 'Bebas Neue', cursive, sans-serif;
-      outline: none;
-      border: 2px solid #e6b800;
-    }
-    .button:hover, .button:focus {
-      background: linear-gradient(90deg, #3558b6 60%, #ffe684 100%);
-      color: #1b349b;
-      transform: translateY(-2px) scale(1.075);
-      box-shadow: 0 6px 24px #ffda57bb, 0 0 8px #1337a388;
-    }
-
-    footer {
-      margin-top: 2.5rem;
-      color: #1337a3;
-      font-size: 1.07rem;
-      font-weight: 600;
-      letter-spacing: 0.012em;
-      text-shadow: 0 1px 0 #fff, 0 0 2px #ffda57aa;
-      font-family: 'Poppins', Arial, sans-serif;
-      background: none;
-    }
-
-    /* Gold underline accent for header */
-    header {
-      border-bottom: 4px solid #ffda57;
-      padding-bottom: 1.1rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 3px 0 #e6b80033;
-      background: none;
+      overflow-x: hidden;
     }
 
     /* Bubbly, lively animated bubbles */
     .bubbles {
       position: fixed;
-      z-index:1;
+      z-index: 1;
       pointer-events: none;
       top: 0; left: 0; width: 100vw; height: 100vh;
       overflow: visible;
@@ -151,63 +31,213 @@
     .bubble {
       position: absolute;
       border-radius: 50%;
-      opacity: 0.13;
+      opacity: 0.12;
       filter: blur(2.5px);
       animation: bubblemove 16s linear infinite;
       background: radial-gradient(circle at 50% 50%, #ffda57 0%, #1337a3 65%, #fff0 100%);
     }
-    /* Different sizes, movement and delays for bubbles */
-    .bubble:nth-child(1) { width: 70px; height: 70px; left: 8vw; top: 80vh; animation-delay: 0s; }
-    .bubble:nth-child(2) { width: 40px; height: 40px; left: 35vw; top: 90vh; animation-delay: 2s;}
-    .bubble:nth-child(3) { width: 100px; height: 100px; left: 75vw; top: 92vh; animation-delay: 5s;}
-    .bubble:nth-child(4) { width: 55px; height: 55px; left: 60vw; top: 100vh; animation-delay: 3s;}
-    .bubble:nth-child(5) { width: 35px; height: 35px; left: 55vw; top: 96vh; animation-delay: 7s;}
+    .bubble:nth-child(1) { width: 60px; height: 60px; left: 8vw; top: 88vh; animation-delay: 0s; }
+    .bubble:nth-child(2) { width: 35px; height: 35px; left: 35vw; top: 96vh; animation-delay: 2s;}
+    .bubble:nth-child(3) { width: 90px; height: 90px; left: 75vw; top: 99vh; animation-delay: 5s;}
+    .bubble:nth-child(4) { width: 40px; height: 40px; left: 60vw; top: 105vh; animation-delay: 3s;}
+    .bubble:nth-child(5) { width: 28px; height: 28px; left: 55vw; top: 100vh; animation-delay: 7s;}
 
     @keyframes bubblemove {
       0% { transform: translateY(0) scale(1); }
-      80% { opacity: 0.2; }
-      100% { transform: translateY(-110vh) scale(1.12); opacity: 0; }
+      80% { opacity: 0.19; }
+      100% { transform: translateY(-110vh) scale(1.10); opacity: 0; }
     }
 
-    @media (max-width: 700px) {
-      .container {
-        padding: 1.2rem 0.5rem 1.1rem 0.5rem;
-        max-width: 98vw;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
-      nav .button {
-        width: 96%;
-        margin: 0.6rem 0;
-        font-size: 1.1rem;
-      }
+    /* HEADER IMAGE BANNER */
+    .header-img {
+      width: 100vw;
+      max-width: 100%;
+      height: 270px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      margin: 0;
+      box-shadow: 0 8px 32px #1337a3a0;
+      border-bottom: 6px solid #ffda57;
+      filter: saturate(1.08) contrast(1.08) brightness(1.01);
+      position: relative;
+      z-index: 3;
+      background: #1337a3;
+    }
+
+    /* CRISP, BUBBLY TITLE AND SLOGAN */
+    .site-title {
+      font-family: 'Bebas Neue', 'Fredoka', Arial, sans-serif;
+      font-size: 3.1rem;
+      margin: 0.4em 0 0.18em 0;
+      text-align: center;
+      color: #fff;
+      letter-spacing: 0.07em;
+      text-shadow: 
+        0 3px 16px #2556d4bb, 
+        0 0 1px #ffda57, 
+        2px 2px 0 #00204b;
+      background: linear-gradient(90deg,#fff 30%,#ffda57 70%,#1337a3 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 2px 8px #1337a355);
+      font-weight: 700;
+    }
+
+    .site-slogan {
+      text-align: center;
+      font-family: 'Fredoka', Arial, sans-serif;
+      font-size: 1.38rem;
+      margin: 0 auto 0.7em auto;
+      color: #ffda57;
+      font-weight: 700;
+      text-shadow: 0 2px 12px #1337a3bb, 0 0 2px #fff8;
+      letter-spacing: 0.03em;
+    }
+
+    .phone {
+      display: block;
+      text-align: center;
+      color: #1337a3;
+      background: #ffda57;
+      font-family: 'Fredoka', Arial, sans-serif;
+      font-size: 1.18rem;
+      font-weight: 700;
+      border-radius: 1.2em;
+      padding: 0.28em 1.1em;
+      margin: 0.6em auto 1.2em auto;
+      width: fit-content;
+      box-shadow: 0 2px 12px #1337a355, 0 0 2px #fff9;
+      letter-spacing: 0.10em;
+      border: 3px solid #1337a3;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin: 2.6rem 0 1.2rem 0;
+      flex-wrap: wrap;
+    }
+    .button {
+      display: inline-block;
+      padding: 1.08rem 2.6rem;
+      font-size: 1.22rem;
+      font-family: 'Fredoka', Arial, sans-serif;
+      font-weight: 700;
+      border: none;
+      border-radius: 50px;
+      background: linear-gradient(90deg, #1337a3 65%, #ffda57 100%);
+      color: #fff;
+      box-shadow: 0 2px 14px #1337a357, 0 0 9px #ffda5790;
+      text-decoration: none;
+      transition: background 0.16s, color 0.18s, transform 0.14s;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      outline: none;
+      border: 2.5px solid #ffda57;
+      margin-bottom: 0.5rem;
+    }
+    .button:hover, .button:focus {
+      background: linear-gradient(90deg, #3558b6 60%, #ffe684 100%);
+      color: #1337a3;
+      transform: translateY(-2px) scale(1.075);
+      box-shadow: 0 6px 24px #ffda57bb, 0 0 8px #1337a388;
+    }
+
+    /* INFO SECTION BELOW HEADER */
+    .info-section {
+      width: 100%;
+      max-width: 680px;
+      margin: 2.1em auto 0 auto;
+      background: rgba(255,255,255,0.10);
+      border-radius: 1.5em;
+      padding: 1.7em 1.3em 1.2em 1.3em;
+      box-shadow: 0 4px 28px #1337a355;
+      color: #fff;
+      font-size: 1.1rem;
+      font-family: 'Fredoka', Arial, sans-serif;
+      text-align: center;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      border-top: 3px solid #ffda57;
+      border-bottom: 3px solid #ffda57;
+      border-left: 2px solid #ffda57;
+      border-right: 2px solid #ffda57;
+      backdrop-filter: blur(2px);
+      /* lively fade in */
+      animation: infofadein 1.2s cubic-bezier(.53,1.75,.29,.98);
+    }
+    @keyframes infofadein {
+      0% { opacity: 0; transform: translateY(35px);}
+      70% { opacity: 0.7;}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+
+    footer {
+      margin: 2.9rem 0 1.1rem 0;
+      color: #1337a3;
+      font-size: 1.09rem;
+      font-family: 'Fredoka', Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.012em;
+      text-shadow: 0 1px 0 #fff, 0 0 2px #ffda57aa;
+      text-align: center;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 800px) {
+      .info-section { max-width: 96vw; }
+      .header-img { height: 170px; }
+      .site-title { font-size: 2.1rem; }
+      .site-slogan { font-size: 1.05rem; }
+      .button { width: 90vw; max-width: 320px; margin: 0.5rem auto; }
+      nav { flex-direction: column; gap: 0.5rem; }
+    }
+    @media (max-width: 400px) {
+      .phone { font-size: 1rem; }
+      .site-title { font-size: 1.3rem; }
+      .info-section { font-size: .96rem; }
     }
   </style>
 </head>
 <body>
-  <div class="bubbles">
+  <div class="bubbles" aria-hidden="true">
     <div class="bubble"></div>
     <div class="bubble"></div>
     <div class="bubble"></div>
     <div class="bubble"></div>
     <div class="bubble"></div>
   </div>
-  <div class="container fade-in">
-    <header>
-      <h1>Thiem Power Washing LLC</h1>
-      <p>Professional Residential & Commercial Exterior Cleaning</p>
-      <p class="phone">📞 (603) 545-2031</p>
-    </header>
+  <!-- HEADER IMAGE -->
+  <img src="header1.jpg" alt="Thiem Power Washing - Clean Results" class="header-img" />
 
-    <nav>
-      <a href="about.html" class="button">About Us</a>
-      <a href="contact.html" class="button">Contact Us</a>
-    </nav>
+  <!-- SITE TITLE & SLOGAN -->
+  <h1 class="site-title">Thiem Power Washing LLC</h1>
+  <div class="site-slogan">Professional Residential &amp; Commercial Exterior Cleaning</div>
+  <div class="phone">📞 (603) 545-2031</div>
 
-    <footer>
-      <p>© 2025 Thiem Power Washing LLC. All rights reserved.</p>
-    </footer>
+  <!-- NAV BUTTONS -->
+  <nav>
+    <a href="about.html" class="button">About Us</a>
+    <a href="contact.html" class="button">Contact Us</a>
+  </nav>
+
+  <!-- INFO SECTION FOR ADDED LEGIBILITY AND CRISP FEEL -->
+  <div class="info-section">
+    <p>
+      Welcome to <span style="color:#ffda57;font-weight:700;">Thiem Power Washing LLC</span>! We bring a sparkling clean to homes &amp; businesses in New Hampshire and beyond. Our modern equipment and friendly, expert service ensure your exterior surfaces look their best—every time.
+    </p>
+    <p>
+      <span style="color:#ffda57;">•</span> Siding, decks, driveways, walkways, patios, fences, and more.<br>
+      <span style="color:#ffda57;">•</span> Fully insured, local, and satisfaction guaranteed.<br>
+      <span style="color:#ffda57;">•</span> Fast, honest quotes &amp; reliable scheduling.
+    </p>
   </div>
+
+  <footer>
+    © 2025 Thiem Power Washing LLC. All rights reserved.
+  </footer>
 </body>
 </html>
