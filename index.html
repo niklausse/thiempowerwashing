@@ -12,35 +12,34 @@
       margin: 0;
       background: #000;
       color: #222;
+      box-sizing: border-box;
     }
     body {
       min-height: 100vh;
-      min-width: 100vw;
+      width: 100vw;
       font-family: 'Fredoka', Arial, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      box-sizing: border-box;
       overflow-x: hidden;
     }
     /* LOGO */
     .logo-banner {
       margin-top: 38px;
-      margin-bottom: 12px;
-      width: 95vw;
-      max-width: 680px;
+      margin-bottom: 18px;
+      width: 96vw;
+      max-width: 700px;
       display: flex;
       justify-content: center;
     }
     .logo-banner img {
       width: 100%;
-      max-width: 680px;
+      max-width: 700px;
       height: auto;
       display: block;
-      filter: drop-shadow(0 6px 32px #0d1756cc);
+      filter: drop-shadow(0 6px 40px #0d1756cc);
     }
-
     /* MAIN FLEX SECTION */
     .main-row {
       display: flex;
@@ -48,30 +47,29 @@
       justify-content: center;
       align-items: flex-start;
       gap: 48px;
-      margin-bottom: 40px;
+      margin-bottom: 48px;
       width: 100vw;
       max-width: 1100px;
     }
-
     /* DOG MASCOT */
     .mascot-img-container {
       width: 190px;
       height: 190px;
-      background: 
-        radial-gradient(circle at 60% 40%, #fff 60%, #ffe174 100%);
+      background: radial-gradient(circle at 60% 40%, #fff 65%, #ffe174 100%);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 8px 44px #1337a333, 0 0 0 7px #ffda5799;
+      box-shadow: 0 8px 44px #1337a344, 0 0 0 7px #ffda5799;
       overflow: hidden;
-      margin-left: 4px;
-      position: relative;
+      margin-left: 6px;
+      margin-top: 12px;
       border: 5px solid #1837b2;
+      position: relative;
     }
     .mascot-img-container img {
-      width: 80%;
-      height: 80%;
+      width: 82%;
+      height: 82%;
       object-fit: contain;
       display: block;
       border-radius: 50%;
@@ -79,15 +77,14 @@
       margin: 0 auto;
       box-shadow: 0 3px 12px #1837b266;
     }
-
     /* INFO BOX */
     .info-box {
       background: #fff;
       border-radius: 20px;
       padding: 32px 44px 24px 44px;
       box-shadow: 0 4px 38px #1837b233, 0 0 0 4px #ffda5777;
-      min-width: 260px;
-      max-width: 390px;
+      min-width: 270px;
+      max-width: 420px;
       border: 2.5px solid #ffda57;
       text-align: center;
       position: relative;
@@ -95,7 +92,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      /* subtle glass effect */
       backdrop-filter: blur(1.5px) saturate(1.12);
     }
     .info-box h2, .info-box p {
@@ -103,7 +99,7 @@
       font-family: 'Orbitron', Arial, sans-serif;
       color: #1b33a1;
       letter-spacing: 0.04em;
-      font-size: 1.12rem;
+      font-size: 1.18rem;
       font-weight: 700;
     }
     .info-box .phone-row {
@@ -135,11 +131,11 @@
       display: inline-block;
     }
     .info-box .divider {
-      width: 95%;
+      width: 92%;
       height: 3px;
       background: linear-gradient(90deg, #ffda57 60%, #fff 100%);
       border: none;
-      margin: 18px 0 20px 0;
+      margin: 18px auto 20px auto;
       border-radius: 2px;
       box-shadow: 0 1px 0 #ffda5722;
     }
@@ -195,10 +191,10 @@
       z-index: 3;
     }
     /* Responsive */
-    @media (max-width: 1050px) {
+    @media (max-width: 1100px) {
       .main-row { flex-direction: column; gap: 18px; align-items: center; }
       .mascot-img-container { width: 150px; height: 150px; }
-      .info-box { max-width: 97vw; }
+      .info-box { max-width: 99vw; }
     }
     @media (max-width: 600px) {
       .logo-banner { margin-top: 16px; }
@@ -214,7 +210,7 @@
 <body>
   <!-- Logo Banner -->
   <div class="logo-banner">
-    <img src="idea.jpg" alt="Thiem Power Washing Logo" />
+    <img src="header2.jpg" alt="Thiem Power Washing Logo" />
   </div>
   <!-- Mascot & Info Row -->
   <div class="main-row">
