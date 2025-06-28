@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Thiem Power Washing LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Futuristic, bold, and crisp fonts -->
+  <!-- Bold, crisp fonts for modern look -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Fredoka:wght@700&display=swap" rel="stylesheet">
   <style>
     html, body {
@@ -20,37 +20,35 @@
       align-items: center;
       justify-content: flex-start;
       font-family: 'Fredoka', Arial, sans-serif;
-      background: #000 url('') repeat top left;
     }
-    /* Logo banner at the top */
     .logo-banner {
       margin-top: 32px;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
       width: 95vw;
-      max-width: 600px;
+      max-width: 640px;
       display: flex;
       justify-content: center;
     }
     .logo-banner img {
       width: 100%;
-      max-width: 600px;
+      max-width: 640px;
       height: auto;
       display: block;
       filter: drop-shadow(0 6px 32px #2228);
     }
-    /* Mascot/logo image */
-    .mascot-row {
+    .main-row {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: flex-start;
-      gap: 50px;
+      gap: 38px;
       margin-bottom: 30px;
       width: 100vw;
-      max-width: 880px;
+      max-width: 1000px;
     }
     .mascot-img-container {
-      width: 180px;
-      height: 180px;
+      width: 230px;
+      height: 230px;
       background: #fff;
       border-radius: 30px;
       display: flex;
@@ -58,24 +56,23 @@
       justify-content: center;
       box-shadow: 0 2px 32px #1337a377, 0 0 0 5px #ffda57bb;
       overflow: hidden;
+      margin-left: 12px;
     }
     .mascot-img-container img {
-      width: 95%;
+      width: 98%;
       height: auto;
       display: block;
       border-radius: 20px;
       background: #fff;
       object-fit: contain;
     }
-    /* Main info box */
     .info-box {
       background: #fff;
       border-radius: 18px;
-      padding: 32px 22px 22px 22px;
+      padding: 28px 32px 24px 32px;
       box-shadow: 0 2px 38px #1337a355, 0 0 0 4px #ffda5777;
-      min-width: 250px;
-      max-width: 340px;
-      margin: 0 auto;
+      min-width: 260px;
+      max-width: 370px;
       border: 2.5px solid #ffda57;
       text-align: center;
       position: relative;
@@ -101,7 +98,7 @@
     .info-box .phone-icon {
       font-size: 1.24em;
       margin-right: 7px;
-      color: #1337a3;
+      color: #1837b2;
       filter: drop-shadow(0 2px 3px #1337a388);
     }
     .info-box .phone-number {
@@ -119,6 +116,7 @@
       text-shadow: 0 2px 4px #1337a3aa, 0 0 2px #fff;
       border: 2px solid #ffda57;
       transition: background 0.16s, color 0.18s;
+      display: inline-block;
     }
     .info-box .divider {
       width: 90%;
@@ -170,19 +168,29 @@
       opacity: 0.88;
       text-align: center;
     }
+    /* Subtle touch: add the orange/blue swoosh top border from idea.jpg */
+    .info-box:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 8px;
+      border-radius: 16px 16px 0 0;
+      background: linear-gradient(90deg, #ffab2f 0%, #1837b2 100%);
+      z-index: 3;
+    }
     /* Responsive */
-    @media (max-width: 900px) {
-      .logo-banner img { max-width: 95vw; }
-      .mascot-row { flex-direction: column; gap: 14px; align-items: center; }
-      .mascot-img-container { width: 50vw; max-width: 180px; height: 140px; }
+    @media (max-width: 960px) {
+      .main-row { flex-direction: column; gap: 10px; align-items: center; }
+      .mascot-img-container { width: 180px; height: 180px; }
       .info-box { max-width: 95vw; }
     }
     @media (max-width: 480px) {
       .logo-banner { margin-top: 12px; }
-      .mascot-row { gap: 6px; }
-      .info-box { padding: 18px 7px; }
+      .main-row { gap: 6px; }
+      .info-box { padding: 15px 4px; }
       .info-box .button-row { flex-direction: column; gap: 12px; }
-      .mascot-img-container { width: 95vw; max-width: 120px; height: 70px; }
+      .mascot-img-container { width: 95vw; max-width: 120px; height: 90px; }
       .info-box h2, .info-box p { font-size: .92rem; }
       .info-box .button { font-size: .98em; padding: 0.7em 1.1em; }
     }
@@ -191,12 +199,11 @@
 <body>
   <!-- Logo Banner -->
   <div class="logo-banner">
-    <img src="logo-thiem-power-washing.png" alt="Thiem Power Washing Logo" />
-    <!-- Replace with your actual logo file or use an SVG for best results -->
+    <img src="idea.jpg" alt="Thiem Power Washing Logo" />
   </div>
   <!-- Mascot & Info Row -->
-  <div class="mascot-row">
-    <!-- Mascot Image (replace with your mascot image) -->
+  <div class="main-row">
+    <!-- Mascot Image -->
     <div class="mascot-img-container">
       <img src="image2.jpg" alt="Mascot" />
     </div>
@@ -216,14 +223,6 @@
         © 2025 Thiem Power Washing LLC. All rights reserved.
       </div>
     </div>
-  </div>
-  <!-- Bubbles for subtle movement -->
-  <div class="bubbles" aria-hidden="true">
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
   </div>
 </body>
 </html>
