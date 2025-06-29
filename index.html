@@ -25,28 +25,31 @@
       overflow-x: hidden;
     }
 
-    /* HEADER BANNER */
+    /* HEADER BANNER with floating effect */
     header {
       width: 100vw;
       max-width: 100vw;
-      height: 350px;
-      background: #000;
+      height: 360px;
+      background: transparent;
       display: flex;
       justify-content: center;
       align-items: flex-end;
       position: relative;
-      overflow: hidden;
-      margin-bottom: 28px;
-      border-bottom: 7px solid #ffda57;
+      overflow: visible;
+      margin-bottom: 32px;
+      border: none;
     }
     .header-logo-img {
-      width: 100%;
-      max-width: 1200px;
+      width: auto;
+      max-width: 90vw;
       max-height: 350px;
-      object-fit: contain;
       display: block;
       margin: 0 auto;
-      filter: drop-shadow(0 8px 40px #0d1756cc);
+      background: transparent;
+      /* 'floating' look: shadow and no border */
+      filter: drop-shadow(0 12px 60px #1337a388) drop-shadow(0 2px 2px #ffda5740);
+      z-index: 2;
+      /* If your logo has any background, use a transparent PNG for best effect */
     }
 
     /* MAIN FLEX SECTION */
@@ -219,9 +222,9 @@
   </style>
 </head>
 <body>
-  <!-- Header Banner with Logo -->
+  <!-- Header Banner with Logo, floating effect -->
   <header>
-    <img src="header1.png" alt="Thiem Power Washing Logo" class="header-logo-img" />
+    <img src="header1.jpg" alt="Thiem Power Washing Logo" class="header-logo-img" />
   </header>
   <!-- Mascot & Info Row -->
   <div class="main-row">
