@@ -10,7 +10,8 @@
     html, body {
       height: 100%;
       margin: 0;
-      background: #000;
+      padding: 0;
+      background: #000 !important;
       color: #222;
       box-sizing: border-box;
     }
@@ -23,33 +24,32 @@
       align-items: center;
       justify-content: flex-start;
       overflow-x: hidden;
+      background: #000 !important;
     }
 
-    /* HEADER BANNER with floating effect */
+    /* HEADER BANNER - LARGER, FLOATING */
     header {
       width: 100vw;
       max-width: 100vw;
-      height: 360px;
+      height: 550px;
       background: transparent;
       display: flex;
       justify-content: center;
       align-items: flex-end;
       position: relative;
       overflow: visible;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
       border: none;
     }
     .header-logo-img {
       width: auto;
-      max-width: 90vw;
-      max-height: 350px;
+      max-width: 98vw;
+      max-height: 540px;
       display: block;
       margin: 0 auto;
       background: transparent;
-      /* 'floating' look: shadow and no border */
-      filter: drop-shadow(0 12px 60px #1337a388) drop-shadow(0 2px 2px #ffda5740);
+      filter: drop-shadow(0 28px 120px #1337a399) drop-shadow(0 2px 2px #ffda5740);
       z-index: 2;
-      /* If your logo has any background, use a transparent PNG for best effect */
     }
 
     /* MAIN FLEX SECTION */
@@ -58,44 +58,51 @@
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
-      gap: 60px;
-      margin-bottom: 60px;
+      gap: 90px;
+      margin-bottom: 70px;
       width: 100vw;
-      max-width: 1200px;
+      max-width: 1500px;
     }
+
+    /* DOG MASCOT with GLOW/HIGHLIGHT */
     .mascot-img-container {
-      width: 220px;
-      height: 220px;
+      width: 290px;
+      height: 290px;
       background: radial-gradient(circle at 60% 40%, #fff 65%, #ffe174 100%);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 12px 48px #1337a344, 0 0 0 8px #ffda5799;
-      overflow: hidden;
-      margin-left: 6px;
+      overflow: visible;
+      margin-left: 8px;
       margin-top: 12px;
-      border: 5px solid #1837b2;
+      border: 10px solid #1837b2;
       position: relative;
+      /* Glowing highlight */
+      box-shadow: 0 0 0 16px #ffda57cc, 0 0 60px 8px #234bcb99, 0 0 200px 0 #ffe17444;
+      z-index: 1;
+      transition: box-shadow 0.2s;
     }
     .mascot-img-container img {
-      width: 82%;
-      height: 82%;
+      width: 88%;
+      height: 88%;
       object-fit: contain;
       display: block;
       border-radius: 50%;
       background: #fff;
       margin: 0 auto;
-      box-shadow: 0 3px 16px #1837b244;
+      box-shadow: 0 3px 24px #1837b244;
     }
+
+    /* INFO BOX with HIGHLIGHT */
     .info-box {
       background: #fff;
-      border-radius: 20px;
-      padding: 40px 56px 32px 56px;
-      box-shadow: 0 6px 40px #1837b233, 0 0 0 5px #ffda5777;
-      min-width: 290px;
-      max-width: 440px;
-      border: 2.5px solid #ffda57;
+      border-radius: 26px;
+      padding: 60px 80px 44px 80px;
+      box-shadow: 0 0 0 18px #ffda57cc, 0 0 66px 12px #234bcb77, 0 0 200px 0 #ffe17433;
+      min-width: 340px;
+      max-width: 600px;
+      border: 5px solid #ffda57;
       text-align: center;
       position: relative;
       z-index: 2;
@@ -103,24 +110,25 @@
       flex-direction: column;
       align-items: center;
       backdrop-filter: blur(1.5px) saturate(1.12);
+      transition: box-shadow 0.2s;
     }
     .info-box h2 {
-      margin: 0 0 18px 0;
+      margin: 0 0 26px 0;
       font-family: 'Montserrat', Arial, sans-serif;
       color: #1b33a1;
       letter-spacing: 0.01em;
-      font-size: 1.27rem;
+      font-size: 1.6rem;
       font-weight: 900;
     }
     .info-box .phone-row {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 22px;
+      margin-bottom: 32px;
     }
     .info-box .phone-icon {
-      font-size: 1.18em;
-      margin-right: 7px;
+      font-size: 1.2em;
+      margin-right: 9px;
       color: #1837b2;
       filter: drop-shadow(0 2px 2px #1337a388);
     }
@@ -128,12 +136,12 @@
       background: linear-gradient(90deg, #234bcb 60%, #ffda57 100%);
       color: #fff;
       font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 1.18em;
+      font-size: 1.22em;
       font-weight: 900;
       border-radius: 22px;
-      padding: 9px 28px;
+      padding: 12px 34px;
       border: none;
-      box-shadow: 0 0 10px #1337a344, 0 0 0 2px #ffda57aa;
+      box-shadow: 0 0 16px #1337a344, 0 0 0 3px #ffda57aa;
       letter-spacing: 0.07em;
       text-shadow: 0 2px 4px #1337a3aa, 0 0 2px #fff;
       border: 2px solid #ffda57;
@@ -141,46 +149,46 @@
       display: inline-block;
     }
     .info-box .divider {
-      width: 94%;
+      width: 97%;
       height: 3px;
       background: linear-gradient(90deg, #ffda57 60%, #fff 100%);
       border: none;
-      margin: 22px auto 26px auto;
+      margin: 28px auto 30px auto;
       border-radius: 2px;
-      box-shadow: 0 1px 0 #ffda5722;
+      box-shadow: 0 2px 0 #ffda5722;
     }
     .info-box .button-row {
       display: flex;
-      gap: 34px;
+      gap: 48px;
       justify-content: center;
-      margin-top: 8px;
-      margin-bottom: 16px;
+      margin-top: 10px;
+      margin-bottom: 24px;
     }
     .info-box .button {
       display: inline-block;
-      min-width: 140px;
-      padding: 1.1em 1.7em;
-      font-size: 1.12em;
+      min-width: 160px;
+      padding: 1.2em 1.8em;
+      font-size: 1.15em;
       font-family: 'Montserrat', Arial, sans-serif;
       font-weight: 700;
       border: none;
-      border-radius: 26px;
+      border-radius: 28px;
       background: linear-gradient(90deg, #234bcb 60%, #ffda57 100%);
       color: #fff;
-      box-shadow: 0 2px 14px #1337a357, 0 0 9px #ffda5790;
+      box-shadow: 0 2px 22px #1337a357, 0 0 12px #ffda5790;
       text-decoration: none;
       transition: background 0.17s, color 0.18s, transform 0.12s;
       letter-spacing: 0.04em;
       cursor: pointer;
       outline: none;
-      border: 2.5px solid #ffda57;
+      border: 3px solid #ffda57;
       text-shadow: 0 2px 4px #1337a3aa, 0 0 2px #fff;
     }
     .info-box .button:hover, .info-box .button:focus {
       background: linear-gradient(90deg, #3558b6 60%, #ffe684 100%);
       color: #1337a3;
       transform: translateY(-2px) scale(1.09);
-      box-shadow: 0 6px 24px #ffda57bb, 0 0 8px #1337a388;
+      box-shadow: 0 10px 32px #ffda57bb, 0 0 11px #1337a388;
     }
     .info-box .copyright {
       margin-top: 18px;
@@ -196,27 +204,28 @@
       display: block;
       position: absolute;
       top: 0; left: 0;
-      width: 100%; height: 8px;
-      border-radius: 16px 16px 0 0;
+      width: 100%; height: 10px;
+      border-radius: 22px 22px 0 0;
       background: linear-gradient(90deg, #ffab2f 0%, #1837b2 100%);
       z-index: 3;
     }
+
     /* Responsive */
     @media (max-width: 1200px) {
-      header { height: 220px; }
-      .header-logo-img { max-height: 220px;}
-      .main-row { flex-direction: column; gap: 24px; align-items: center; }
-      .mascot-img-container { width: 150px; height: 150px; }
-      .info-box { max-width: 99vw; }
+      header { height: 300px; }
+      .header-logo-img { max-height: 280px;}
+      .main-row { flex-direction: column; gap: 32px; align-items: center; }
+      .mascot-img-container { width: 180px; height: 180px; }
+      .info-box { max-width: 99vw; padding: 36px 20px 28px 20px; }
     }
     @media (max-width: 600px) {
-      header { height: 120px; }
+      header { height: 140px; }
       .header-logo-img { max-height: 120px;}
-      .main-row { gap: 10px; }
+      .main-row { gap: 12px; }
       .info-box { padding: 14px 4px; }
-      .info-box .button-row { flex-direction: column; gap: 12px; }
-      .mascot-img-container { width: 80px; height: 80px; }
-      .info-box h2, .info-box p { font-size: 1em; }
+      .info-box .button-row { flex-direction: column; gap: 16px; }
+      .mascot-img-container { width: 90px; height: 90px; }
+      .info-box h2 { font-size: 1em; }
       .info-box .button { font-size: .98em; padding: 0.7em 1.1em; min-width: 100px;}
     }
   </style>
